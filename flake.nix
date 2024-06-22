@@ -30,6 +30,6 @@
           ./modules/spicetify.nix
         ];
       };
-    }
+    };
   };
 }
