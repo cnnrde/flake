@@ -54,7 +54,5 @@
     enable = true;
   };
 
-  system.copySystemConfiguration = true;
-
   system.stateVersion = "24.05"; # do not change :D
 }

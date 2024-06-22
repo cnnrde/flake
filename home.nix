@@ -2,7 +2,7 @@
 
 {
   home.username = "cnnd";
-  home.homeDirectory = "/home/cnnd";
+  # home.homeDirectory = "/home/cnnd";
 
   # set cursor size and dpi for 4k monitor
   xresources.properties = {
