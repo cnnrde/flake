@@ -4,4 +4,4 @@
   imports = [
     ./spicetify.nix
   ];
-};
+}
