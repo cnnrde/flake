@@ -1,11 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  users.users.cnnd.isNormalUser = true;
-  users.users.cnnd.extraGroups = [ "wheel" ];
-
   home.username = "cnnd";
-  # home.homeDirectory = "/home/cnnd";
+  home.homeDirectory = "/home/cnnd";
 
   # set cursor size and dpi for 4k monitor
   xresources.properties = {

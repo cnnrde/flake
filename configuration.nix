@@ -35,6 +35,14 @@
   environment.shells = with pkgs; [ zsh ];
   programs.zsh.enable = true;
 
+  users.users = {
+    # change if you are not me
+    cnnd = {
+      isNormalUser = true;
+      extraGroups = [ "wheel" ]; # Enable ‘wheel’ group for use of sudo.
+    };
+  }
+
   services.pipewire = {
     enable = true;
     pulse.enable = true;
