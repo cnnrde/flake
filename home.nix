@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 
 {
+  users.users.cnnd.isNormalUser = true;
+  users.users.cnnd.extraGroups = [ "wheel" ];
+
   home.username = "cnnd";
   # home.homeDirectory = "/home/cnnd";
 
