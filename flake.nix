@@ -11,7 +11,12 @@
     spicetify-nix.url = "github:the-argus/spicetify-nix";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }: {
+  outputs = { nixpkgs, ...} @ inputs: let     
+    # here we use nixpkgs from our inputs, which is why why included it
+    # above instead of just {...} @ inputs. If we did that, this would be
+    # "inputs.nixpkgs".
+    pkgs = import nixpkgs { system = "x86_64-linux"; };
+  in {
     # replace komodo with your hostname
     nixosConfigurations = {
       komodo = nixpkgs.lib.nixosSystem {
