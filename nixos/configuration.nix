@@ -35,6 +35,17 @@
   environment.shells = with pkgs; [ zsh ];
   programs.zsh.enable = true;
 
+  # system packages
+  environment.systemPackages = with pkgs; [
+    # bits and bobs
+    vim
+    wget
+    unzip
+    zip
+    htop
+  ];
+
+  # user
   users.users = {
     # change if you are not me
     cnnd = {

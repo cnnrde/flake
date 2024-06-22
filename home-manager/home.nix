@@ -22,10 +22,7 @@
     vscode
     alacritty
     prismlauncher
-    wget
-    unzip
     nerdfonts
-    zip
     lunar-client
 
     # Theoretically required for VSCode
