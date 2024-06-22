@@ -4,6 +4,10 @@
   home.username = "cnnd";
   home.homeDirectory = "/home/cnnd";
 
+  imports = [
+    ./imports.nix
+  ];
+
   # set cursor size and dpi for 4k monitor
   xresources.properties = {
     "Xcursor.size" = 16;
