@@ -10,7 +10,7 @@
 
   # set cursor size for 4k monitor
   xresources.properties = {
-    "Xcursor.size" = 24;
+    "Xcursor.size" = 36;
   };
 
   # Packages that should be installed to the user profile.
