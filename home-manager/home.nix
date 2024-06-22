@@ -8,10 +8,9 @@
     ./imports.nix
   ];
 
-  # set cursor size and dpi for 4k monitor
+  # set cursor size for 4k monitor
   xresources.properties = {
-    "Xcursor.size" = 16;
-    "Xft.dpi" = 172;
+    "Xcursor.size" = 24;
   };
 
   # Packages that should be installed to the user profile.
