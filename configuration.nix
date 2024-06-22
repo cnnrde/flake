@@ -41,7 +41,7 @@
       isNormalUser = true;
       extraGroups = [ "wheel" ]; # Enable ‘wheel’ group for use of sudo.
     };
-  }
+  };
 
   services.pipewire = {
     enable = true;
