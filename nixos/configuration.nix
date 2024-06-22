@@ -69,6 +69,9 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ]; # enable flakes & the nix command
 
+  # i want vms
+  virtualisation.libvirtd.enable = true;
+
   programs.steam = {
     enable = true;
   };

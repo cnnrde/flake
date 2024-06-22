@@ -14,10 +14,11 @@
     google-chrome 
     vesktop
     vscode
-    alacritty
     prismlauncher
     nerdfonts
     lunar-client
+    aseprite
+    virt-manager
 
     # Theoretically required for VSCode
     desktop-file-utils
@@ -33,13 +34,9 @@
   };
 
   # starship - an customizable prompt for any shell
-  programs.starship = {
-    enable = true;
-  };
+  programs.starship.enable = true;
 
-  programs.zsh = {
-    enable = true;
-  };
+  programs.zsh.enable = true;
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
