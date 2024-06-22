@@ -13,25 +13,23 @@
 
   outputs = { self, nixpkgs, home-manager, ... }: {
     # replace komodo with your hostname
-    nixosConfigurations.komodo = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      modules = [
-        ./nixos/configuration.nix
-
-        ./modules/spicetify.nix
-        # add home-manager module
-        # this makes home-manager deployment automatic
-        home-manager.nixosModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-
-          # yet again, replace with your own info (unless you're also called cnnd... but that would be weird)
-          home-manager.users.cnnd = import ./home-manager/home.nix;
-          # here we can use home-manager.extraSpecialArgs to pass arguments to home.nix, for example with spicetify
-          home-manager.extraSpecialArgs = {inherit inputs;};
-        }
-      ];
+    nixosConfigurations = {
+      komodo = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        modules = [
+          ./nixos/configuration.nix
+        ];
+      };
     };
+    homeConfigurations = {
+      "cnnd@komodo" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        system = "x86_64-linux";
+        modules = [
+          ./home-manager/home.nix
+          ./modules/spicetify.nix
+        ];
+      };
+    }
   };
 }
