@@ -22,6 +22,7 @@
     hypnotix
     freerdp3
     dotnet-sdk_8
+    gh
 
     # Theoretically required for VSCode
     desktop-file-utils
