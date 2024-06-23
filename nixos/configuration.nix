@@ -43,6 +43,7 @@
     unzip
     zip
     htop
+    bc
   ];
 
   # user
