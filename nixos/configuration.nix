@@ -51,7 +51,7 @@
     # change if you are not me
     cnnd = {
       isNormalUser = true;
-      extraGroups = [ "wheel" ]; # Enable ‘wheel’ group for use of sudo.
+      extraGroups = [ "wheel" "libvirt" "kvm" ]; # wheel for sudo, libvirt and kvm for vms
     };
   };
 
