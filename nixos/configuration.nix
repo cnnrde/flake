@@ -51,7 +51,7 @@
     # change if you are not me
     cnnd = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "libvirtd" "kvm" ]; # wheel for sudo, libvirt and kvm for vms
+      extraGroups = [ "wheel" "libvirtd" "kvm" "docker" ]; # wheel for sudo, libvirt and kvm for vms, docker for... well... you'll figure it out
     };
   };
 
@@ -72,6 +72,8 @@
 
   # i want vms
   virtualisation.libvirtd.enable = true;
+  virtualisation.docker.enable = true;
+
 
   programs.steam = {
     enable = true;
