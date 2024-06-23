@@ -20,7 +20,7 @@
     virt-manager
     zulu
     hypnotix
-    freerdp
+    freerdp3
 
     # Theoretically required for VSCode
     desktop-file-utils
