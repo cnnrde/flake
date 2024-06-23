@@ -19,6 +19,7 @@
     aseprite
     virt-manager
     zulu
+    hypnotix
 
     # Theoretically required for VSCode
     desktop-file-utils
