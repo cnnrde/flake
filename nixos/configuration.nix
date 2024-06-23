@@ -44,6 +44,7 @@
     zip
     htop
     bc
+    lsof
   ];
 
   # user
