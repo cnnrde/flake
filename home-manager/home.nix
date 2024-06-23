@@ -39,7 +39,16 @@
 
   programs.starship.enable = true;
 
-  programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+    autosuggestion.enable = true;
+    shellAliases = {
+      ll = "ls -l";
+      update = "sudo nixos-rebuild switch";
+      gc = "gh copilot suggest"; # may conflict with garbage collectors?
+      gce = "gh copilot explain";
+    };
+  };
 
   # might as well
   dconf.settings = {
