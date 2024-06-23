@@ -45,8 +45,8 @@
     shellAliases = {
       ll = "ls -l";
       update = "sudo nixos-rebuild switch";
-      gc = "gh copilot suggest"; # may conflict with garbage collectors?
-      gce = "gh copilot explain";
+      ghcs = "gh copilot suggest";
+      ghce = "gh copilot explain";
     };
   };
 
