@@ -51,7 +51,7 @@
     # change if you are not me
     cnnd = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "libvirt" "kvm" ]; # wheel for sudo, libvirt and kvm for vms
+      extraGroups = [ "wheel" "libvirtd" "kvm" ]; # wheel for sudo, libvirt and kvm for vms
     };
   };
 
