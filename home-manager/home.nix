@@ -21,6 +21,7 @@
     zulu
     hypnotix
     freerdp3
+    dotnet-sdk_8
 
     # Theoretically required for VSCode
     desktop-file-utils
