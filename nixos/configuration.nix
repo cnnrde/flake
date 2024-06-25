@@ -75,6 +75,12 @@
   virtualisation.libvirtd.enable = true;
   virtualisation.docker.enable = true;
 
+  # seems i need this for vscode's c# lsp
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    # Add any missing dynamic libraries for unpackaged programs
+    # here, NOT in environment.systemPackages
+  ];
 
   programs.steam = {
     enable = true;
