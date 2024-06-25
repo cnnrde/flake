@@ -23,7 +23,7 @@
     freerdp3
     dotnet-sdk_8
     gh
-    roslyn-ls
+    roslyn
 
     # Theoretically required for VSCode
     desktop-file-utils
