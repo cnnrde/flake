@@ -11,7 +11,7 @@
     spicetify-nix.url = "github:the-argus/spicetify-nix";
   };
 
-  outputs = { self, nixpkgs, home-manager, spicetify-nix, ... }: {
+  outputs = { self, nixpkgs, home-manager, spicetify-nix, nix-ld, ... }: {
     # replace komodo with your hostname
     nixosConfigurations.komodo = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
