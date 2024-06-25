@@ -12,7 +12,6 @@
     nitch
     google-chrome 
     vesktop
-    vscode
     prismlauncher
     nerdfonts
     lunar-client
@@ -23,8 +22,6 @@
     freerdp3
     dotnet-sdk_8
     gh
-    roslyn
-    roslyn-ls
 
     # Theoretically required for VSCode
     desktop-file-utils
@@ -50,6 +47,13 @@
       ghcs = "gh copilot suggest";
       ghce = "gh copilot explain";
     };
+  };
+
+  programs.vscode = {
+    enable = true;
+    extensions = with pkgs.vscode-extensions; [
+      ms-dotnettools.csdevkit
+    ];
   };
 
   # might as well
