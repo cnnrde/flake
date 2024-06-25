@@ -24,6 +24,7 @@
     gh
     nodejs
     corepack
+    mullvad-vpn
 
     # Theoretically required for VSCode
     desktop-file-utils

@@ -46,6 +46,10 @@
     bc
     lsof
     cmake
+    python3
+    gcc
+    gnumake
+    kdePackages.xdg-desktop-portal-kde
   ];
 
   # user
