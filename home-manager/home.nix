@@ -23,6 +23,7 @@
     dotnet-sdk_8
     gh
     nodejs
+    corepack
 
     # Theoretically required for VSCode
     desktop-file-utils
