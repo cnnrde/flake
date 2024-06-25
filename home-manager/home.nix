@@ -51,9 +51,7 @@
 
   programs.vscode = {
     enable = true;
-    extensions = with pkgs.vscode-extensions; [
-      ms-dotnettools.csdevkit
-    ];
+    package = pkgs.vscode.fhs;
   };
 
   # might as well
