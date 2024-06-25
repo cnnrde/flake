@@ -22,6 +22,7 @@
     freerdp3
     dotnet-sdk_8
     gh
+    nodejs
 
     # Theoretically required for VSCode
     desktop-file-utils
