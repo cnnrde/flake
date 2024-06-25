@@ -45,6 +45,7 @@
     htop
     bc
     lsof
+    cmake
   ];
 
   # user
