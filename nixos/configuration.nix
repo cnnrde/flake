@@ -70,6 +70,12 @@
   services.mullvad-vpn.enable = true;
   services.mullvad-vpn.package = pkgs.mullvad-vpn;
 
+  # tailscale
+  services.tailscale = {
+    enable = true;
+    useRoutingFeatures = "both";
+  };
+
   # desktop
   services.xserver.enable = true;
   services.xserver.videoDrivers = [ "amdgpu" ];
