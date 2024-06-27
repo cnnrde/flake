@@ -49,6 +49,7 @@
     python3
     gcc
     gnumake
+    cloudflared
     kdePackages.xdg-desktop-portal-kde
   ];
 
