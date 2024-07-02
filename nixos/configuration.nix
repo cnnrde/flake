@@ -50,7 +50,6 @@
     gcc
     gnumake
     cloudflared
-    kdePackages.xdg-desktop-portal-kde
   ];
 
   # user
@@ -80,8 +79,6 @@
   # desktop
   services.xserver.enable = true;
   services.xserver.videoDrivers = [ "amdgpu" ];
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
 
   nixpkgs.config.allowUnfree = true; # this will allow chrome & other proprietary software
 
