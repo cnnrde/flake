@@ -79,6 +79,7 @@
   # desktop
   services.xserver.enable = true;
   services.xserver.videoDrivers = [ "amdgpu" ];
+  services.xserver.displayManager.sddm.enable = true;
   programs.hyprland.enable = true;
 
   nixpkgs.config.allowUnfree = true; # this will allow chrome & other proprietary software
